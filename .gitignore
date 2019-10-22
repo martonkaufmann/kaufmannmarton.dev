@@ -1,5 +1,4 @@
 .DS_Store
-.editorconfig
 .env.development.local
 .env.local
 .env.production.local
