@@ -4,7 +4,8 @@ import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 
-import './app.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import './build.css'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])

@@ -23,3 +23,8 @@ docker run --rm -it -v $LOCAL_PATH:/kaufmannmarton.dev kaufmannmarton.dev /bin/s
 ```
 docker container exec -it $CONTAINER_ID /bin/sh
 ```
+
+### Build css
+```
+./node_modules/.bin/postcss src/app.css > src/build.css
+```
