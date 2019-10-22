@@ -1,8 +1,10 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaravel, faPhp, faSymfony, faWordpress, faJs, faReact, faNode, faDocker, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default () => (
     <main className="w-screen h-screen flex flex-col">
-    {/* <main className="w-screen h-screen flex flex-col pt-16"> */}
+        {/* <main className="w-screen h-screen flex flex-col pt-16"> */}
         {/* <nav className="h-16 w-full bg-white shadow fixed top-0 flex items-center justify-between px-4">
             <a className="text-lg" href="/">
                 <span className="text-blue-400">{'<'}</span>Marton Kaufmann <span className="text-blue-400">{'/>'}</span>
@@ -21,14 +23,14 @@ export default () => (
                     <h3 className="text-lg">Developer of websites, web applications and APIs</h3>
                 </header>
                 <section className="stack-grid">
-                    <i className="fab fa-php fa-php--colored text-4xl"></i>
-                    <i className="fab fa-laravel fa-laravel--colored text-4xl"></i>
-                    <i className="fab fa-symfony fa-symfony--colored text-4xl"></i>
-                    <i className="fab fa-wordpress fa-wordpress--colored text-4xl"></i>
-                    <i className="fab fa-js fa-js--colored text-4xl"></i>
-                    <i className="fab fa-react fa-react--colored text-4xl"></i>
-                    <i className="fab fa-node fa-node--colored text-4xl"></i>
-                    <i className="fab fa-docker fa-docker--colored text-4xl"></i>
+                    <FontAwesomeIcon icon={faPhp} className="fa-php--colored text-4xl" />
+                    <FontAwesomeIcon icon={faLaravel} className="fa-laravel--colored text-4xl" />
+                    <FontAwesomeIcon icon={faSymfony} className="fa-symfony--colored text-4xl" />
+                    <FontAwesomeIcon icon={faWordpress} className="fa-wordpress--colored text-4xl" />
+                    <FontAwesomeIcon icon={faJs} className="fa-js--colored text-4xl" />
+                    <FontAwesomeIcon icon={faReact} className="fa-react--colored text-4xl" />
+                    <FontAwesomeIcon icon={faNode} className="fa-node--colored text-4xl" />
+                    <FontAwesomeIcon icon={faDocker} className="fa-docker--colored text-4xl" />
                 </section>
             </article>
             <article className="flex-1 flex flex-col bg-blue-400">
@@ -52,13 +54,13 @@ export default () => (
                 </section>
                 <footer className="bg-blue-900 text-xl px-4 py-3 text-white text-center">
                     <a target="_blank" href="https://github.com/martonkaufmann">
-                        <i className="fab fa-github mx-2"></i>
+                        <FontAwesomeIcon icon={faGithub} className="mx-2" />
                     </a>
                     <a target="_blank" href="https://twitter.com/kaufmannmrton">
-                        <i className="fab fa-twitter mx-2"></i>
+                        <FontAwesomeIcon icon={faTwitter} className="mx-2" />
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/m%C3%A1rton-kaufmann-10b69248/">
-                        <i className="fab fa-linkedin-in mx-2"></i>
+                        <FontAwesomeIcon icon={faLinkedin} className="mx-2" />
                     </a>
                 </footer>
             </article>
