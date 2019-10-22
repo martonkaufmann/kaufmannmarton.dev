@@ -1,0 +1,44 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+    build:
+        branches:
+            only: master
+
+        docker:
+            - image: circleci/node:12.12
+              environment:
+                  NODE_ENV: production
+
+        steps:
+            - checkout
+
+            - restore_cache:
+                  keys:
+                      - dependencies-{{ checksum "package.json" }}
+
+            - run:
+                  name: Install dependencies
+                  command: yarn
+
+            - save_cache:
+                  paths:
+                      - node_modules
+                  key: dependencies-{{ checksum "package.json" }}
+
+            - run:
+                  name: Compile css
+                  command: ./node_modules/.bin/postcss src/app.css > src/build.css
+
+            - run:
+                  name: Build site
+                  command: yarn build
+
+            - run:
+                  name: Deploy to github pages
+                  command: |
+                      git add dist && git commit -m "Github pages auto commit $(date)"
+                      git subtree push --prefix dist origin gh-pages
