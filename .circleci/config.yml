@@ -40,5 +40,5 @@ jobs:
             - run:
                   name: Deploy to github pages
                   command: |
-                      git add dist && git commit -m "Github pages auto commit $(date)"
+                      git add -f dist && git commit -m "Github pages auto commit $(date)"
                       git subtree push --prefix dist origin gh-pages
