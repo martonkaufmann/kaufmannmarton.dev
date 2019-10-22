@@ -1,5 +1,7 @@
 FROM node:12.12.0-alpine
 
+ENV CHOKIDAR_USEPOLLING true
+
 WORKDIR /kaufmannmarton.dev
 
 COPY . .
