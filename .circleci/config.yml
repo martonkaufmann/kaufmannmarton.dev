@@ -14,6 +14,10 @@ jobs:
                   NODE_ENV: production
 
         steps:
+            - add_ssh_keys:
+                fingerprints:
+                    - "0b:4f:c3:f6:3a:4e:e8:d2:65:cc:7e:aa:0c:71:c9:4e"
+
             - checkout
 
             - restore_cache:
