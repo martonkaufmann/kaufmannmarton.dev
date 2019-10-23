@@ -25,6 +25,12 @@ jobs:
                       - dependencies-{{ checksum "package.json" }}
 
             - run:
+                  name: Setup git account
+                  command: |
+                      git config --global user.email "kaufmann.marton@protonmail.com"
+                      git config --global user.name "kaufmannmarton"
+
+            - run:
                   name: Install dependencies
                   command: yarn
 
@@ -44,7 +50,6 @@ jobs:
             - run:
                   name: Deploy to github pages
                   command: |
-                      git config --global user.email "kaufmann.marton@protonmail.com"
-                      git config --global user.name "kaufmannmarton"
                       git add -f dist && git commit -m "Github pages auto commit $(date)"
+                      git subtree pull --prefix dist origin gh-pages --squash
                       git subtree push --prefix dist origin gh-pages
