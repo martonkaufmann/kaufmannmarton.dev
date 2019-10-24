@@ -50,7 +50,7 @@ jobs:
             - run:
                   name: Deploy to github pages
                   command: |
-                      git add -f dist
-                      git checkout gh-pages
-                      git commit -m "Github pages auto commit $(date)"
-                      git push origin gh-pages
+                      mv ./dist ./docs
+                      git add .
+                      git commit -m "Github pages circleci auto commit $(date)"
+                      git push origin master
