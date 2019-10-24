@@ -22,7 +22,7 @@ jobs:
 
             - restore_cache:
                   keys:
-                      - dependencies-{{ checksum "package.json" }}
+                      - dependencies-{{ checksum "yarn.lock" }}
 
             - run:
                   name: Setup git account
@@ -37,7 +37,7 @@ jobs:
             - save_cache:
                   paths:
                       - node_modules
-                  key: dependencies-{{ checksum "package.json" }}
+                  key: dependencies-{{ checksum "yarn.lock" }}
 
             - run:
                   name: Compile css
