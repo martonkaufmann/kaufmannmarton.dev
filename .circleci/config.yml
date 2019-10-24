@@ -52,5 +52,5 @@ jobs:
                   command: |
                       mv ./dist ./docs
                       git add .
-                      git commit -m "Github pages circleci auto commit $(date)"
+                      git commit -m "[ci skip] Github pages circleci auto commit $(date)"
                       git push origin master
