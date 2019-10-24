@@ -29,30 +29,24 @@ export default {
                     box-sizing: border-box;
                 }
             `}</style>
+                    <script src="//instant.page/2.0.1" type="module" defer integrity="sha384-4Duao6N1ACKAViTLji8I/8e8H5Po/i/04h4rS5f9fQD6bXBBZhqv5am3/Bf/xalr"></script>
                 </Head>
                 <Body>{children}</Body>
             </Html>
         ),
 
     getRoutes: async () => {
-        // const { data: posts } = await axios.get(
-        //   'https://jsonplaceholder.typicode.com/posts'
-        // )
+        const { data: tools } = await axios.get(
+            `https://jsonbox.io/${process.env.JSON_BOX_ID}?q=type:tool`
+        )
 
         return [
-            //   {
-            //     path: '/blog',
-            //     getData: () => ({
-            //       posts,
-            //     }),
-            //     children: posts.map(post => ({
-            //       path: `/post/${post.id}`,
-            //       template: 'src/containers/Post',
-            //       getData: () => ({
-            //         post,
-            //       }),
-            //     })),
-            //   },
+            {
+                path: '/tools',
+                getData: () => ({
+                    tools,
+                }),
+            },
         ]
     },
     plugins: [

@@ -11,7 +11,7 @@ Get-Content Dockerfile | docker image build --no-cache -t kaufmannmarton.dev . -
 
 ### Start the docker container
 ```
-docker container run --rm -p 3000:3000 -v /kaufmannmarton.dev/node_modules -v $LOCAL_PATH:/kaufmannmarton.dev kaufmannmarton.dev
+docker container run --rm -e JSON_BOX_ID=$JSON_BOX_ID -p 3000:3000 -v /kaufmannmarton.dev/node_modules -v $LOCAL_PATH:/kaufmannmarton.dev kaufmannmarton.dev
 ```
 
 ### Access the docker image

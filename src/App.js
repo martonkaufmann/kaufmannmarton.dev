@@ -9,16 +9,28 @@ import './build.css'
 // addPrefetchExcludes(['dynamic'])
 
 function App() {
-  return (
-    <Root>
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            {/* <Dynamic path="dynamic" /> */}
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-    </Root>
-  )
+    return (
+        <Root>
+            <main className="w-full h-screen flex flex-col pt-16">
+                <nav className="h-16 w-full bg-white shadow fixed top-0 flex items-center justify-between px-4">
+                    <a className="text-lg" href="/">
+                        <span className="text-blue-400">{'<'}</span>Marton Kaufmann <span className="text-blue-400">{'/>'}</span>
+                    </a>
+                    <ul className="flex flex-row">
+                        <li>
+                            <a href="/tools">Tools</a>
+                        </li>
+                    </ul>
+                </nav>
+                <React.Suspense fallback={<em>Loading...</em>}>
+                    <Router className="flex flex-1">
+                        {/* <Dynamic path="dynamic" /> */}
+                        <Routes path="*" />
+                    </Router>
+                </React.Suspense>
+            </main>
+        </Root>
+    )
 }
 
 export default App
