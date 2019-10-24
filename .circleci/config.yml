@@ -50,5 +50,6 @@ jobs:
             - run:
                   name: Deploy to github pages
                   command: |
+                      cp CNAME dist/CNAME
                       git add -f dist && git commit -m "Github pages auto commit $(date)"
                       git subtree push --prefix dist origin gh-pages
