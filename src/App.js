@@ -22,7 +22,13 @@ function App() {
                         </li>
                     </ul>
                 </nav>
-                <React.Suspense fallback={<em>Loading...</em>}>
+                <React.Suspense fallback={
+                    <div className="loader">
+                        <div className="loader__bar"></div>
+                        <div className="loader__bar"></div>
+                        <div className="loader__bar"></div>
+                    </div>
+                }>
                     <Router className="flex flex-1">
                         {/* <Dynamic path="dynamic" /> */}
                         <Routes path="*" />
