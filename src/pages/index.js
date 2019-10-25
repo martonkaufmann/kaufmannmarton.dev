@@ -25,10 +25,11 @@ export default () => (
         <article className="flex-1 flex flex-col bg-blue-400">
             <section className="px-4 py-4 md:px-8 lg:px-16 mb-4 flex flex-col flex-1 justify-center">
                 <header className="text-3xl text-white mb-4">Contact me</header>
-                <form>
+                <form action={`https://getsimpleform.com/messages?form_api_token=${process.env.SIMPLE_FORM_ID}`} method="post">
+                    <input type='hidden' name='redirect_to' value={`${process.env.HOST}/contact-success`} />
                     <section className="flex flex-col mb-2">
                         <label className="text-white mb-1" htmlFor="name">Name</label>
-                        <input className="py-2 px-3" type="text" id="name" name="name" />
+                        <input className="py-2 px-3" type="text" id="name" name="name" required="required" />
                     </section>
                     <section className="flex flex-col mb-2">
                         <label className="text-white mb-1" htmlFor="email">Email</label>
@@ -36,7 +37,7 @@ export default () => (
                     </section>
                     <section className="flex flex-col mb-4">
                         <label className="text-white mb-1" htmlFor="message">Message</label>
-                        <textarea className="py-2 px-3" name="message" id="message"></textarea>
+                        <textarea className="py-2 px-3" name="message" id="message" required="required"></textarea>
                     </section>
                     <button className="bg-white py-2 px-3 w-full text-blue-400" type="submit">Contact</button>
                 </form>
