@@ -7,7 +7,7 @@ export default () => (
         <article className="flex-1 px-4 py-8 flex flex-col justify-center items-center text-center">
             <header className="mb-8">
                 <h1 className="text-3xl mb-2">
-                    <span className="text-blue-400">&lt;</span>Marton Kaufmann <span className="text-blue-400">/></span>
+                    <span className="text-blue-400">&lt;</span>Kaufmann Marton <span className="text-blue-400">/></span>
                 </h1>
                 <h3 className="text-lg">Developer of websites, web applications and APIs</h3>
             </header>
