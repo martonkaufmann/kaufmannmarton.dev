@@ -43,13 +43,13 @@ export default () => (
                 </form>
             </section>
             <footer className="bg-blue-900 text-xl px-4 py-3 text-white text-center">
-                <a target="_blank" href="https://github.com/martonkaufmann">
+                <a target="_blank" aria-label="Github" rel="noreferrer noopener" href="https://github.com/martonkaufmann">
                     <FontAwesomeIcon icon={faGithub} className="mx-2" />
                 </a>
-                <a target="_blank" href="https://twitter.com/kaufmannmrton">
+                <a target="_blank" aria-label="Twitter" rel="noreferrer noopener" href="https://twitter.com/kaufmannmrton">
                     <FontAwesomeIcon icon={faTwitter} className="mx-2" />
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/m%C3%A1rton-kaufmann-10b69248/">
+                <a target="_blank" aria-label="LinkedIn" rel="noreferrer noopener" href="https://www.linkedin.com/in/m%C3%A1rton-kaufmann-10b69248/">
                     <FontAwesomeIcon icon={faLinkedin} className="mx-2" />
                 </a>
             </footer>

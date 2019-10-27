@@ -14,7 +14,9 @@ export default {
                 <Head>
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
+                    <meta name="Description" content="Kaufmann Marton developer of websites, web applications and APIs"></meta>
+                    <title>&lt;Kaufmann Marton /></title>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="preload" as="font" />
                     <style>{`
                 html {
                     font-family: Roboto, sans-serif;
@@ -29,9 +31,11 @@ export default {
                     box-sizing: border-box;
                 }
             `}</style>
-                    <script src="//instant.page/2.0.1" type="module" defer integrity="sha384-4Duao6N1ACKAViTLji8I/8e8H5Po/i/04h4rS5f9fQD6bXBBZhqv5am3/Bf/xalr"></script>
                 </Head>
-                <Body>{children}</Body>
+                <Body>
+                    {children}
+                    <script src="//instant.page/2.0.1" type="module" defer integrity="sha384-4Duao6N1ACKAViTLji8I/8e8H5Po/i/04h4rS5f9fQD6bXBBZhqv5am3/Bf/xalr"></script>
+                </Body>
             </Html>
         ),
 
