@@ -1,11 +1,11 @@
 import React from 'react'
 
-import NuaxiaScreenshot from './../images/nuaxia.jpg'
-import InpedioScreenshot from './../images/inpedio.jpg'
-import ElvolineScreenshot from './../images/elvoline.jpg'
-import TrabeloScreenshot from './../images/trabelo.jpg'
-import VideoIBMScreenshot from './../images/video-ibm.jpg'
-import IndiebillScreenshot from './../images/indiebill.jpg'
+import NuaxiaScreenshot from './../../public/images/nuaxia.jpg'
+import InpedioScreenshot from './../../public/images/inpedio.jpg'
+import ElvolineScreenshot from './../../public/images/elvoline.jpg'
+import TrabeloScreenshot from './../../public/images/trabelo.jpg'
+import VideoIBMScreenshot from './../../public/images/video-ibm.jpg'
+import IndiebillScreenshot from './../../public/images/indiebill.jpg'
 
 export default () => {
     return <article className="projects-grid mx-2 sm:mx-12 my-4">
