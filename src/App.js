@@ -17,8 +17,9 @@ function App() {
                         <span className="text-blue-400">{'<'}</span>Kaufmann Marton <span className="text-blue-400">{'/>'}</span>
                     </a>
                     <ul className="flex flex-row">
-                        <li>
-                            <a href="/tools">Tools</a>
+                        <li className="mx-2">
+                            <a className="nav-link" href="/tools">Tools</a>
+                        </li>
                         </li>
                     </ul>
                 </nav>
