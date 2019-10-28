@@ -50,8 +50,6 @@ jobs:
             - run:
                   name: Deploy to github pages
                   command: |
-                      rm -r docs
-                      mv dist docs
                       git add .
                       git reset HEAD docs/CNAME
                       git commit -m "[ci skip] Github pages circleci auto commit $(date)"
