@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaravel, faPhp, faSymfony, faWordpress, faJs, faReact, faNode, faDocker, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLaravel, faPhp, faSymfony, faWordpress, faJs, faReact, faNode, faDocker, faGithub, faTwitter, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
 
 export default () => (
     <section className="flex flex-1 flex-col md:flex-row">
@@ -33,7 +33,7 @@ export default () => (
                     </section>
                     <section className="flex flex-col mb-2">
                         <label className="text-white mb-1" htmlFor="email">Email</label>
-                        <input className="py-2 px-3" type="email" name="email" id="email" />
+                        <input className="py-2 px-3" type="email" required="required" name="email" id="email" />
                     </section>
                     <section className="flex flex-col mb-4">
                         <label className="text-white mb-1" htmlFor="message">Message</label>
@@ -42,15 +42,18 @@ export default () => (
                     <button className="bg-white py-2 px-3 w-full text-blue-400" type="submit">Contact</button>
                 </form>
             </section>
-            <footer className="bg-blue-900 text-xl px-4 py-3 text-white text-center">
-                <a target="_blank" aria-label="Github" rel="noreferrer noopener" href="https://github.com/martonkaufmann">
-                    <FontAwesomeIcon icon={faGithub} className="mx-2" />
+            <footer className="bg-blue-900 px-4 py-3 text-white text-center">
+                <a className="mx-4" target="_blank" aria-label="Github" rel="noreferrer noopener" href="https://github.com/martonkaufmann">
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
-                <a target="_blank" aria-label="Twitter" rel="noreferrer noopener" href="https://twitter.com/kaufmannmrton">
-                    <FontAwesomeIcon icon={faTwitter} className="mx-2" />
+                <a className="mx-4" target="_blank" aria-label="Twitter" rel="noreferrer noopener" href="https://twitter.com/kaufmannmrton">
+                    <FontAwesomeIcon icon={faTwitter} size="lg" />
                 </a>
-                <a target="_blank" aria-label="LinkedIn" rel="noreferrer noopener" href="https://www.linkedin.com/in/m%C3%A1rton-kaufmann-10b69248/">
-                    <FontAwesomeIcon icon={faLinkedin} className="mx-2" />
+                <a className="mx-4" target="_blank" aria-label="LinkedIn" rel="noreferrer noopener" href="https://www.linkedin.com/in/m%C3%A1rton-kaufmann-10b69248">
+                    <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                </a>
+                <a className="mx-4" target="_blank" aria-label="Codepen" rel="noreferrer noopener" href="https://codepen.io/kaufmannmarton">
+                    <FontAwesomeIcon icon={faCodepen} size="lg" />
                 </a>
             </footer>
         </article>

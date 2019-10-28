@@ -1,8 +1,13 @@
-# React-Static - Basic Template
+# kaufmannmarton.dev
+
+[![CodeFactor](https://www.codefactor.io/repository/github/martonkaufmann/kaufmannmarton.dev/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/martonkaufmann/kaufmannmarton.dev)
+[![CircleCI](https://circleci.com/gh/martonkaufmann/kaufmannmarton.dev/tree/master.svg?style=svg)](https://circleci.com/gh/martonkaufmann/kaufmannmarton.dev/tree/master)
+
+## React-Static - Basic Template
 
 To use this template, run `react-static create` and use the `basic` template.
 
-# Example commands
+## Example commands
 
 ### Build docker image using specific file
 ```
