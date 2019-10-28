@@ -16,10 +16,12 @@ function App() {
                     <a className="text-lg" href="/">
                         <span className="text-blue-400">{'<'}</span>Kaufmann Marton <span className="text-blue-400">{'/>'}</span>
                     </a>
-                    <ul className="flex flex-row">
+                    <ul className="flex-row hidden sm:flex">
                         <li className="mx-2">
                             <a className="nav-link" href="/tools">Tools</a>
                         </li>
+                        <li className="mx-2">
+                            <a className="nav-link" href="/projects">Projects</a>
                         </li>
                     </ul>
                 </nav>
