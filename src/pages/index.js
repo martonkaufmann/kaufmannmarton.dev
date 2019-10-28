@@ -33,7 +33,7 @@ export default () => (
                     </section>
                     <section className="flex flex-col mb-2">
                         <label className="text-white mb-1" htmlFor="email">Email</label>
-                        <input className="py-2 px-3" type="email" name="email" id="email" />
+                        <input className="py-2 px-3" type="email" required="required" name="email" id="email" />
                     </section>
                     <section className="flex flex-col mb-4">
                         <label className="text-white mb-1" htmlFor="message">Message</label>
