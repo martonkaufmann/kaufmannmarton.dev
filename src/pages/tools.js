@@ -8,7 +8,7 @@ export default () => {
         {tools.map(tool => <li className="mb-8" key={`tool-${tool.id}`}>
             <section className="flex items-end mb-1">
                 <img src={tool.image} className="h-8 mr-2" />
-                <a href={tool.url} target="_blank" className="text-xl underline">
+                <a href={tool.url} target="_blank" rel="noreferrer noopener" className="text-xl underline">
                     {tool.name}
                 </a>
             </section>
