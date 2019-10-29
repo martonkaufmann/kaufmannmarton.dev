@@ -44,6 +44,10 @@ jobs:
                   command: ./node_modules/.bin/postcss src/app.css > src/build.css
 
             - run:
+                name: Fix code formatting
+                command: yarn prettier
+
+            - run:
                   name: Build site
                   command: yarn build
 
