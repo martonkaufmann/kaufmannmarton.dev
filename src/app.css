@@ -29,6 +29,10 @@
     transform: scaleX(1);
 }
 
+.nav-dropdown {
+    animation: nav-dropdown-open .2s ease-in-out;
+}
+
 .stack-grid {
     display: grid;
     grid-template-columns: 3rem 3rem 3rem 3rem;
@@ -118,5 +122,14 @@
     }
     50%, 100% {
         transform: scaleY(1);
+    }
+}
+
+@keyframes nav-dropdown-open {
+    0% {
+        transform: translateY(-100%);
+    }
+    50%, 100% {
+        transform: translateY(1);
     }
 }

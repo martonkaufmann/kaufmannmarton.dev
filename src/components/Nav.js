@@ -30,7 +30,7 @@ export default () => {
             </ul>
         </nav>
         {isNavOpen && (
-            <ul className="bg-white shadow py-4 border-t fixed w-full">
+            <ul className="nav-dropdown bg-white shadow py-4 border-t fixed w-full">
                 <li className="text-center mb-2">
                     <a className="text-lg" href="/">Contact</a>
                 </li>
