@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default () => {
-    const [isAsideOpen, setIsAsideOpen] = useState(false)
+    const [isNavOpen, setIsNavOpen] = useState(false)
 
     return <>
-        <nav className={`${!isAsideOpen && 'shadow'} h-16 w-full bg-white fixed top-0 flex items-center justify-between px-4`}>
+        <nav className={`${!isNavOpen && 'shadow'} h-16 w-full bg-white fixed top-0 flex items-center justify-between px-4`}>
             <a className="text-lg" href="/">
                 <span className="text-blue-400">{'<'}</span>Kaufmann Marton <span className="text-blue-400">{'/>'}</span>
             </a>
-            <button className="block px-2 py-1 sm:hidden" onClick={() => setIsAsideOpen(!isAsideOpen)}>
-                {isAsideOpen ? (
+            <button className="block px-2 py-1 sm:hidden" onClick={() => setIsNavOpen(!isNavOpen)}>
+                {isNavOpen ? (
                     <FontAwesomeIcon icon={faTimes} size="lg" />
                 ) : (
                         <FontAwesomeIcon icon={faBars} size="lg" />
@@ -29,8 +29,8 @@ export default () => {
                 </li>
             </ul>
         </nav>
-        {isAsideOpen && (
-            <ul className="bg-white shadow py-4 border-t">
+        {isNavOpen && (
+            <ul className="bg-white shadow py-4 border-t fixed w-full">
                 <li className="text-center mb-2">
                     <a className="text-lg" href="/">Contact</a>
                 </li>
