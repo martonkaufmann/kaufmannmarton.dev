@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
 // import Dynamic from 'containers/Dynamic'
 import LazyLoad from "vanilla-lazyload";
+import Nav from './components/Nav'
 
 import './build.css'
 
@@ -21,22 +22,7 @@ function App() {
     return (
         <Root>
             <main className="w-full h-screen flex flex-col pt-16">
-                <nav className="h-16 w-full bg-white shadow fixed top-0 flex items-center justify-between px-4">
-                    <a className="text-lg" href="/">
-                        <span className="text-blue-400">{'<'}</span>Kaufmann Marton <span className="text-blue-400">{'/>'}</span>
-                    </a>
-                    <ul className="flex-row hidden sm:flex">
-                        <li className="mx-2">
-                            <a className="nav-link" href="/">Contact</a>
-                        </li>
-                        <li className="mx-2">
-                            <a className="nav-link" href="/tools">Tools</a>
-                        </li>
-                        <li className="mx-2">
-                            <a className="nav-link" href="/projects">Projects</a>
-                        </li>
-                    </ul>
-                </nav>
+                <Nav />
                 <React.Suspense fallback={
                     <div className="loader">
                         <div className="loader__bar"></div>
