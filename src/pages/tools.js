@@ -1,17 +1,11 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { useRouteData } from 'react-static'
-import LazyLoad from "vanilla-lazyload";
+import ImageLazyLoad from './../components/ImageLazyLoad'
 
 export default () => {
     const { tools } = useRouteData()
 
-    useEffect(() => {
-        new LazyLoad({
-            elements_selector: 'img[data-src]'
-        });
-    })
-
-    return <ul className="my-4 mx-auto px-2 w-10/12 md:w-1/2 lg:md-1/3">
+    return <ImageLazyLoad><ul className="my-4 mx-auto px-2 w-10/12 md:w-1/2 lg:md-1/3">
         {tools.map(tool => <li className="mb-8" key={`tool-${tool.id}`}>
             <section className="flex items-end mb-1">
                 <img data-src={tool.image} className="h-8 mr-2" />
@@ -22,4 +16,5 @@ export default () => {
             <section>{tool.description}</section>
         </li>)}
     </ul>
+    </ImageLazyLoad>
 }

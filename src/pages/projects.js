@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import LazyLoad from "vanilla-lazyload";
+import React from 'react'
+import ImageLazyLoad from './../components/ImageLazyLoad'
 
 import NuaxiaScreenshot from './../assets/images/nuaxia.jpg'
 import NuaxiaScreenshotLow from './../assets/images/nuaxia-low.jpg'
@@ -15,13 +15,7 @@ import IndiebillScreenshot from './../assets/images/indiebill.jpg'
 import IndiebillScreenshotLow from './../assets/images/indiebill-low.jpg'
 
 export default () => {
-    useEffect(() => {
-        new LazyLoad({
-            elements_selector: 'img[data-src]'
-        });
-    })
-
-    return <article className="projects-grid mx-2 sm:mx-12 my-4">
+    return <ImageLazyLoad><article className="projects-grid mx-2 sm:mx-12 my-4">
         <section>
             <a className="block mb-2" href="https://video.ibm.com" target="_blank" rel="noreferrer noopener">
                 <img className="project-image" src={VideoIBMScreenshotLow} data-src={VideoIBMScreenshot} alt="video.ibm.com screenshot" />
@@ -84,4 +78,5 @@ export default () => {
             </a>
         </section>
     </article>
+    </ImageLazyLoad>
 }
