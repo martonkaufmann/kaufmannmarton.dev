@@ -20,6 +20,9 @@ function App() {
                     </a>
                     <ul className="flex-row hidden sm:flex">
                         <li className="mx-2">
+                            <a className="nav-link" href="/">Contact</a>
+                        </li>
+                        <li className="mx-2">
                             <a className="nav-link" href="/tools">Tools</a>
                         </li>
                         <li className="mx-2">
