@@ -1,17 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import NuaxiaScreenshot from './../assets/images/nuaxia.jpg'
+import NuaxiaScreenshotLow from './../assets/images/nuaxia-low.jpg'
 import InpedioScreenshot from './../assets/images/inpedio.jpg'
+import InpedioScreenshotLow from './../assets/images/inpedio-low.jpg'
 import ElvolineScreenshot from './../assets/images/elvoline.jpg'
+import ElvolineScreenshotLow from './../assets/images/elvoline-low.jpg'
 import TrabeloScreenshot from './../assets/images/trabelo.jpg'
+import TrabeloScreenshotLow from './../assets/images/trabelo-low.jpg'
 import VideoIBMScreenshot from './../assets/images/video-ibm.jpg'
+import VideoIBMScreenshotLow from './../assets/images/video-ibm-low.jpg'
 import IndiebillScreenshot from './../assets/images/indiebill.jpg'
+import IndiebillScreenshotLow from './../assets/images/indiebill-low.jpg'
 
 export default () => {
+    useEffect(() => {
+        document.lazyLoadInstance.update();
+    })
+
     return <article className="projects-grid mx-2 sm:mx-12 my-4">
         <section>
             <a className="block mb-2" href="https://video.ibm.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={VideoIBMScreenshot} alt="video.ibm.com screenshot" />
+                <img className="project-image" src={VideoIBMScreenshotLow} data-src={VideoIBMScreenshot} alt="video.ibm.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://video.ibm.com" target="_blank" rel="noreferrer noopener">
                 Video IBM
@@ -22,7 +32,7 @@ export default () => {
         </section>
         <section>
             <a className="block mb-2" href="https://www.nuaxia.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={NuaxiaScreenshot} alt="nuaxia.com screenshot" />
+                <img className="project-image" src={NuaxiaScreenshotLow} data-src={NuaxiaScreenshot} alt="nuaxia.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://www.nuaxia.com" target="_blank" rel="noreferrer noopener">
                 Nuaxia
@@ -33,7 +43,7 @@ export default () => {
         </section>
         <section>
             <a className="block mb-2" href="https://www.inpedio.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={InpedioScreenshot} alt="inpedio.com screenshot" />
+                <img className="project-image" src={InpedioScreenshotLow} data-src={InpedioScreenshot} alt="inpedio.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://www.inpedio.com" target="_blank" rel="noreferrer noopener">
                 Inpedio
@@ -45,7 +55,7 @@ export default () => {
         </section>
         <section>
             <a className="block mb-2" href="https://www.indiebill.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={IndiebillScreenshot} alt="indiebill.com screenshot" />
+                <img className="project-image" src={IndiebillScreenshotLow} data-src={IndiebillScreenshot} alt="indiebill.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://www.indiebill.com" target="_blank" rel="noreferrer noopener">
                 Indiebill
@@ -56,7 +66,7 @@ export default () => {
         </section>
         <section>
             <a className="block mb-2" href="https://www.elvoline.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={ElvolineScreenshot} alt="elvoline.com screenshot" />
+                <img className="project-image" src={ElvolineScreenshotLow} data-src={ElvolineScreenshot} alt="elvoline.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://www.elvoline.com" target="_blank" rel="noreferrer noopener">
                 Elvoline
@@ -64,7 +74,7 @@ export default () => {
         </section>
         <section>
             <a className="block mb-2" href="https://www.trabelo.com" target="_blank" rel="noreferrer noopener">
-                <img className="project-image" src={TrabeloScreenshot} alt="trabelo.com screenshot" />
+                <img className="project-image" src={TrabeloScreenshotLow} data-src={TrabeloScreenshot} alt="trabelo.com screenshot" />
             </a>
             <a className="block text-center text-xl mb-1" href="https://www.trabelo.com" target="_blank" rel="noreferrer noopener">
                 Trabelo
