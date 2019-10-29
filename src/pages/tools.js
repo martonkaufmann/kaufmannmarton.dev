@@ -1,11 +1,14 @@
 import React, {useEffect} from 'react'
 import { useRouteData } from 'react-static'
+import LazyLoad from "vanilla-lazyload";
 
 export default () => {
     const { tools } = useRouteData()
 
     useEffect(() => {
-        document.lazyLoadInstance.update();
+        new LazyLoad({
+            elements_selector: 'img[data-src]'
+        });
     })
 
     return <ul className="my-4 mx-auto px-2 w-10/12 md:w-1/2 lg:md-1/3">

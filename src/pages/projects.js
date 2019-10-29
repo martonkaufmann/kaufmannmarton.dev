@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import LazyLoad from "vanilla-lazyload";
 
 import NuaxiaScreenshot from './../assets/images/nuaxia.jpg'
 import NuaxiaScreenshotLow from './../assets/images/nuaxia-low.jpg'
@@ -15,7 +16,9 @@ import IndiebillScreenshotLow from './../assets/images/indiebill-low.jpg'
 
 export default () => {
     useEffect(() => {
-        document.lazyLoadInstance.update();
+        new LazyLoad({
+            elements_selector: 'img[data-src]'
+        });
     })
 
     return <article className="projects-grid mx-2 sm:mx-12 my-4">
