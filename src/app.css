@@ -31,7 +31,7 @@
 
 .stack-grid {
     display: grid;
-    grid-template-columns: 4rem 4rem 4rem 4rem;
+    grid-template-columns: 3rem 3rem 3rem 3rem;
     grid-gap: 1rem;
 }
 
