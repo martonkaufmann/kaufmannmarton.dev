@@ -1,12 +1,12 @@
-import {useEffect} from 'react'
-import LazyLoad from "vanilla-lazyload";
+import { useEffect } from 'react';
+import LazyLoad from 'vanilla-lazyload';
 
-export default ({children}) => {
+export default ({ children }) => {
     useEffect(() => {
         new LazyLoad({
-            elements_selector: 'img[data-src]'
+            elements_selector: 'img[data-src]',
         });
-    })
+    });
 
-    return children
-}
+    return children;
+};
