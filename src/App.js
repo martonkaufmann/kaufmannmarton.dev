@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Router } from '@reach/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
 // import Dynamic from 'containers/Dynamic'
+import LazyLoad from "vanilla-lazyload";
 
 import './build.css'
 
@@ -11,6 +12,12 @@ import './build.css'
 // addPrefetchExcludes(['dynamic'])
 
 function App() {
+    useEffect(() => {
+        document.lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img[data-src]'
+        });
+    });
+
     return (
         <Root>
             <main className="w-full h-screen flex flex-col pt-16">

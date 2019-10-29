@@ -10,7 +10,7 @@ export default pluginOptions => ({
                     loader: 'url-loader',
                     test: /\.(jpg|png)$/,
                     query: {
-                        limit: 100,
+                        limit: 5,
                         name: 'static/[name].[hash:8].[ext]',
                     },
                 },
