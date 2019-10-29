@@ -6,7 +6,7 @@ export default () => {
     const [isNavOpen, setIsNavOpen] = useState(false)
 
     return <>
-        <nav className={`${!isNavOpen && 'shadow'} h-16 w-full bg-white fixed top-0 flex items-center justify-between px-4`}>
+        <nav className={`${!isNavOpen && 'shadow'} h-16 w-full bg-white fixed top-0 flex items-center justify-between px-4 z-10`}>
             <a className="text-lg" href="/">
                 <span className="text-blue-400">{'<'}</span>Kaufmann Marton <span className="text-blue-400">{'/>'}</span>
             </a>
