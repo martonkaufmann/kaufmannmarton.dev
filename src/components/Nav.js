@@ -53,13 +53,18 @@ export default () => {
                         </a>
                     </li>
                     <li className="text-center mb-2">
+                        <a className="text-lg" href="/projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li className="text-center mb-2">
                         <a className="text-lg" href="/tools">
                             Tools
                         </a>
                     </li>
-                    <li className="text-center">
-                        <a className="text-lg" href="/projects">
-                            Projects
+                    <li className="text-center mb">
+                        <a className="text-lg" href="/articles">
+                            Articles
                         </a>
                     </li>
                 </ul>
