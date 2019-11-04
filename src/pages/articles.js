@@ -18,7 +18,7 @@ export default () => {
     return (
         <ul className="my-4 mx-auto px-2 w-10/12 md:w-1/2 lg:md-1/3">
             {articles.map(article => (
-                <li className="mb-8" key={`article-${article.id}`}>
+                <li className="mb-8" key={`article-${article._id}`}>
                     <a href={article.url} target="_blank" rel="noreferrer noopener" className="text-xl underline">
                         {article.title}
                     </a>
