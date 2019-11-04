@@ -44,11 +44,21 @@ export default {
             `https://jsonbox.io/${process.env.JSON_BOX_ID}?q=type:tool`
         )
 
+        const { data: articles } = await axios.get(
+            `https://jsonbox.io/${process.env.JSON_BOX_ID}?q=type:article`
+        )
+
         return [
             {
                 path: '/tools',
                 getData: () => ({
                     tools,
+                }),
+            },
+            {
+                path: '/articles',
+                getData: () => ({
+                    articles,
                 }),
             },
         ]

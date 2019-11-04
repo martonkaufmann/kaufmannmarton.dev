@@ -29,13 +29,18 @@ export default () => {
                         </a>
                     </li>
                     <li className="mx-2">
+                        <a className="nav-link" href="/projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li className="mx-2">
                         <a className="nav-link" href="/tools">
                             Tools
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a className="nav-link" href="/projects">
-                            Projects
+                        <a className="nav-link" href="/articles">
+                            Articles
                         </a>
                     </li>
                 </ul>
