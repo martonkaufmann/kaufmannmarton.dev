@@ -30,7 +30,7 @@ export default () => {
                             target="_blank"
                             rel="noreferrer noopener"
                         >
-                            dev.to
+                            {getHostname(article.url)}
                         </a>
                     </section>
                 </li>
