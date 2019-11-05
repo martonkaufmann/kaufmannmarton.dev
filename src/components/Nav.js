@@ -29,8 +29,8 @@ export default () => {
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a className="nav-link" href="/projects">
-                            Projects
+                        <a className="nav-link" href="/portfolio">
+                            Portfolio
                         </a>
                     </li>
                     <li className="mx-2">
@@ -53,8 +53,8 @@ export default () => {
                         </a>
                     </li>
                     <li className="text-center mb-2">
-                        <a className="text-lg" href="/projects">
-                            Projects
+                        <a className="text-lg" href="/portfolio">
+                            Portfolio
                         </a>
                     </li>
                     <li className="text-center mb-2">
