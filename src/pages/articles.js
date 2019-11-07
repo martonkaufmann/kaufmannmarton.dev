@@ -6,7 +6,7 @@ export default () => {
     const formatCreatedOnString = createdOn => {
         const date = new Date(createdOn);
         const year = date.getFullYear();
-        const month = date.getMonth();
+        const month = date.getMonth() + 1;
         let day = date.getDate();
 
         day = day < 10 ? `0${day}` : day;
