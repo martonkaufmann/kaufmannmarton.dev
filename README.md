@@ -3,6 +3,11 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/martonkaufmann/kaufmannmarton.dev/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/martonkaufmann/kaufmannmarton.dev)
 [![CircleCI](https://circleci.com/gh/martonkaufmann/kaufmannmarton.dev/tree/master.svg?style=svg)](https://circleci.com/gh/martonkaufmann/kaufmannmarton.dev/tree/master)
 
+## License
+
+This project is licensed under the terms of the MIT license.
+License details can be found in the license file.
+
 ## React-Static - Basic Template
 
 To use this template, run `react-static create` and use the `basic` template.
