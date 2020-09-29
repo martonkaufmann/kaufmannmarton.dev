@@ -20,7 +20,7 @@
 ###### Experience:
 
 ##### SmartX / Vienna Insurance Group
-*2020 March – 2020 September*
+*2020 March – Present*
 
 Worked on the new and legacy internal recruitment and sales platform for the company. 
 Developed a service that allows the companies internal systems to request certain documents or document sets from clients and after the client uploaded them forward it to the target system.
