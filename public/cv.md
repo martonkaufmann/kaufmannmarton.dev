@@ -1,8 +1,13 @@
 **Name**: Marton Kaufmann
+
 **Email**: kaufmann.marton@protonmail.com
+
 **Phone**: +36706260099
+
 **Github**: https://github.com/martonkaufmann
+
 **LinkedIn**: https://hu.linkedin.com/public-profile/in/m%C3%A1rton-kaufmann-10b69248
+
 **Twitter**: https://twitter.com/kaufmannmrton
 
 ##### SmartX / Vienna Insurance Group
