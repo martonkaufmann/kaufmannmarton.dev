@@ -12,7 +12,7 @@
 
 ***
 #### SmartX / Vienna Insurance Group
-_2020 March – Present_
+_2020 March – 2022 December_
 
 **Technologies**: PHP, Docker, Laravel, MySQL, Redis
 
