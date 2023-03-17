@@ -10,7 +10,7 @@
 
 **Twitter**: https://twitter.com/kaufmannmrton
 
-### Chainpass
+#### Chainpass
 _2023_
 
 **Technologies**: React, Next.js, Typescript, Zustand, Formik, Wagmi, Solidity, OpenPGP
