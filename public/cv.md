@@ -10,12 +10,16 @@
 
 **Twitter**: https://twitter.com/kaufmannmrton
 
+***
+
 #### Chainpass
 _2023_
 
 **Technologies**: React, Next.js, Typescript, Zustand, Formik, Wagmi, Solidity, OpenPGP
 
 Currently working on a blockchain based password manager side project.
+
+***
 
 #### Esportmanager.com
 _2022_
