@@ -31,7 +31,7 @@ Worked on developing an esports platform which can be used by event organizers t
 ***
 
 #### SmartX / Vienna Insurance Group
-_2020 March – 2022 December_
+_2020 March – 2022 December_, 
 _2023 February – 2023_
 
 **Technologies**: PHP, Docker, Laravel, MySQL, Redis
@@ -66,8 +66,8 @@ _2019 February - 2019 June_
 ***
 
 #### Nuaxia / Elementary-AI
-_2018 June - 2019 January
-2019 December – 2020 July_
+_2018 June - 2019 January_,
+_2019 December – 2020 July_
 
 **Technologies**: Javascript, Node.js, PHP, Laravel, Lumen, Docker, Kubernetes, MySQL, Redis, Backbone.js, Elasticsearch, jQuery, GCP
 
@@ -85,8 +85,8 @@ Built a webapplication that was used to manage the secured/hardened devices prov
 ***
 
 #### OPIT / TBA21
-_2013 October - 2016 April
-2016 September - 2016 November_
+_2013 October - 2016 April_,
+_2016 September - 2016 November_
 
 **Technologies**: PHP, Symfony, MySQL, Redis, jQuery, Javascript
 
