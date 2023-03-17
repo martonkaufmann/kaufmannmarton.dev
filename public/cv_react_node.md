@@ -10,6 +10,13 @@
 
 **Twitter**: https://twitter.com/kaufmannmrton
 
+### Chainpass
+_2023_
+
+**Technologies**: React, Next.js, Typescript, Zustand, Formik, Wagmi, Solidity, OpenPGP
+
+Currently working on a blockchain based password manager side project.
+
 #### Esportmanager.com
 _2022_
 
@@ -21,6 +28,7 @@ Worked on developing an esports platform which can be used by event organizers t
 
 #### SmartX / Vienna Insurance Group
 _2020 March – 2022 December_
+_2023 February – 2023_
 
 **Technologies**: PHP, Docker, Laravel, MySQL, Redis
 
