@@ -12,27 +12,28 @@
 
 ***
 
-#### Chainpass
-_2023_
+#### EPAM
+_2023 March– Currently_
 
-**Technologies**: React, Next.js, Typescript, Zustand, Formik, Wagmi, Solidity, OpenPGP
+**Technologies**: PHP, SugarCRM, Docker, MySQL, Redis
 
-Currently working on a blockchain based password manager side project.
+Worked on developing a new internal platform and releasing customized code for the already existing customers of an EPAM client.
 
 ***
 
-#### Esportmanager.com
-_2022_
+#### Esportmanager.com [Contractor]
+_2022_\
+_https://esportmanager.com/_
 
-**Technologies**: Node.js, Exporess, MongoDB, Angular, PHP, Symfony
+**Technologies**: Node.js, Express, MongoDB, Angular, PHP, Symfony
 
 Worked on developing an esports platform which can be used by event organizers to create events for various eports titles and manage participants.
 
 ***
 
-#### SmartX / Vienna Insurance Group
+#### SmartX / Vienna Insurance Group [Contractor]
 _2020 March – 2022 December_, 
-_2023 February – 2023_
+_2023 February – 2024_
 
 **Technologies**: PHP, Docker, Laravel, MySQL, Redis
 
@@ -49,7 +50,7 @@ Participated in the rewrite of the legacy PHP monolith to a React and Go based m
 
 ***
 
-#### IBM Budapest Lab
+#### IBM Budapest Lab [Contractor]
 _2019 June – 2020 March_
 
 **Technologies**: Golang, Docker, Datadog, PHP, Symfony, MySQL, Elasticsearch, Kubernetes, GRPC, RabbitMQ
@@ -58,14 +59,14 @@ Worked on the service that would replace the already existing user and subscript
 
 ***
 
-#### Apex IT Services
+#### Apex IT Services [Contractor]
 _2019 February - 2019 June_
 
 **Technologies**: PHP, Symfony, Docker, AWS, MySQL, Redis, jQuery, Javascript
 
 ***
 
-#### Nuaxia / Elementary-AI
+#### Nuaxia / Elementary-AI [Contractor]
 _2018 June - 2019 January_,
 _2019 December – 2020 July_
 
