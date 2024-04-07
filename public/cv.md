@@ -10,6 +10,8 @@
 
 **Twitter**: https://twitter.com/kaufmannmrton
 
+**CV**: https://github.com/martonkaufmann/kaufmannmarton.dev/blob/master/public/cv.md
+
 ***
 
 #### EPAM
